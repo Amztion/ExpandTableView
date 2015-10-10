@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TableViewController"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SectionHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="250" height="48"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x1s-zj-xW7">
+                    <rect key="frame" x="10" y="13" width="11" height="22"/>
+                    <state key="normal" image="carat">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Section" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fwR-G9-uwb">
+                    <rect key="frame" x="26" y="13" width="58.5" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="centerY" secondItem="x1s-zj-xW7" secondAttribute="centerY" id="L7T-Jc-Ljj"/>
+                <constraint firstItem="x1s-zj-xW7" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="fSD-aW-ku1"/>
+                <constraint firstAttribute="centerY" secondItem="fwR-G9-uwb" secondAttribute="centerY" constant="0.75" id="fZw-2G-2Wy"/>
+                <constraint firstItem="fwR-G9-uwb" firstAttribute="leading" secondItem="x1s-zj-xW7" secondAttribute="trailing" constant="5" id="vLb-bh-8Fd"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="cartButton" destination="x1s-zj-xW7" id="2aC-p4-j5L"/>
+                <outlet property="sectionTitleLabel" destination="fwR-G9-uwb" id="40l-eW-l8z"/>
+            </connections>
+            <point key="canvasLocation" x="281" y="367"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="carat" width="11" height="11"/>
+    </resources>
+</document>
